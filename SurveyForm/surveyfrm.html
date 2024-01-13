@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="survfrm.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a Survey Form</p>
+        <form id="survey-form" >
+            <fieldset>
+                <label id="name-label" for="name"> Full Name: <input id="name" type="text" required placeholder="John Doe" /></label>
+                <label id="email-label" for="email"> Email: <input id="email" type="email" required placeholder="johndoe@gmail.com" /> </label>
+                <label id="number-label" for="number"> Number: <input id="number" type="number" min="1" max="10" placeholder="1234..." /></label>
+
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">
+                    <select id="dropdown" name="dropdown"> Choose one:
+                        <option> (Select one)</option>
+                        <option> Option 1</option>
+                        <option> Option 2</option>
+                    </select>
+                </label>
+                <label for="rad1"> Radio 1
+                    <input type="radio" value="rad1" name="radbtn1"/>
+                    <input type="radio" value="rad1" name="radbtn1"/>
+                </label>
+                <label for="rad2"> Radio 2
+                    <input type="radio" value="rad2" name="radbtn2" />
+                    <input type="radio" value="rad2" name="radbtn2" />
+                </label>
+                <label for="chkbox"> choose one:
+                    <input type="checkbox" value="chkbox">
+                    <input type="checkbox" value="chkbox">
+                </label>
+                
+            </fieldset>
+            <fieldset>
+                <label for="bio"> Provide a bio:
+                    <textarea name="bio" id="bio" cols="30" rows="4" placeholder="I love to code....."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <div>
+            <a href="../index.html">Back</a>
+          </div>
+        <!-- JavaScript code to handle the form submission and validation
+        <script src="https://code.jquery.com/jquery-3.5 -->
+    </body>
+</html>
